@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <style>
+        .input {
+            background-color: darkblue;
+            text-align: center;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input" id="inputId">
+        <h3>
+            Enter Your Mail Address to Validate
+        </h3>
+        <div>
+            Email <input type="text" id="emailId"><br><br>
+            <button onclick="validateEmal()">Validate</button>
+        </div>
+        <p id="outputId">
+
+        </p>
+
+    </div>
+    <script>
+        function validateEmal() {
+            let emailId = document.getElementById("emailId").value;
+            var matcher = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (emailId.match(matcher)) {
+                document.getElementById("outputId").innerHTML = "Valid Email"
+            } else {
+                document.getElementById("outputId").innerHTML = "Invalid Email";
+            }
+        }
+    </script>
+</body>
+
+</html><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>
